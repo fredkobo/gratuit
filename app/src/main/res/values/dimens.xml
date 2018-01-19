@@ -1,0 +1,7 @@
+
+<resources>
+    <dimen name="screen_margin">16dp</dimen>
+    <dimen name="smallSpace">8dp</dimen>
+    <dimen name="mediumSpace">16dp</dimen>
+    <dimen name="largeSpace">32dp</dimen>
+</resources>

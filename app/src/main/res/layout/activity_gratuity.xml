@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/screen_margin"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:id="@+id/llBillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="R"
+            android:textSize="30sp"/>
+        <EditText
+            android:id="@+id/edBillTotal"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:inputType="numberDecimal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/smallSpace"/>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spPercentage"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/llBillAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/largeSpace"/>
+
+    <LinearLayout
+        android:id="@+id/llTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spPercentage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/largeSpace"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="R"
+            android:textSize="30sp"/>
+        <TextView
+            android:id="@+id/tvTip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="00.00"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTotals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/largeSpace"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="R"
+            android:textSize="30sp"/>
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="00.00"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+</RelativeLayout>
